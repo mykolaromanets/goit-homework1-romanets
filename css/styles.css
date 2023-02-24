@@ -2,14 +2,15 @@
   --main-title-colour: #2e2f42;
   --main-text-colour: #434455;
   --accent-colour: #4d5ae5;
+  --main-bg-colour: #ffffff;
 }
 
 body {
-  background: #ffffff;
-  color: #434455;
+  background: var(--main-bg-colour);
+  color: var(--main-text-colour);
 
   font-family: "Roboto", sans-serif;
-  font-style: normal;
+  font-size: 16px;
   letter-spacing: 0.02em;
 
   cursor: default;
@@ -25,6 +26,7 @@ ul {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.3;
+  letter-spacing: inherit;
   text-decoration: none;
   text-transform: uppercase;
 
@@ -39,8 +41,7 @@ ul {
   color: var(--main-title-colour);
 
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.5;
   text-decoration: none;
 
   cursor: default;
@@ -58,9 +59,8 @@ ul {
   color: var(--main-text-colour);
 
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6;
+
+  line-height: 1.5;
   text-decoration: none;
 
   cursor: default;
@@ -78,9 +78,8 @@ ul {
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--main-bg-colour);
 
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.1;
 }
@@ -122,17 +121,17 @@ ul {
 /* Sections */
 
 .section-title,
-.section-title-low {
+.section-subtitle {
   color: var(--main-title-colour);
 }
 
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
+  text-transform: capitalize;
 }
 
-.section-title-low {
+.section-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -141,8 +140,6 @@ ul {
 .section-text {
   color: var(--main-text-colour);
 
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -178,8 +175,6 @@ ul {
 .footer-text {
   color: #e7e9fc;
 
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
 }
 
@@ -204,16 +199,4 @@ ul {
   color: #ffffff;
 
   cursor: pointer;
-}
-
-.exaples-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-}
-
-.exaples-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
 }
